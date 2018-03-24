@@ -1,6 +1,4 @@
----
-title: Contents
----
+# Contents
 
 ### Items
 

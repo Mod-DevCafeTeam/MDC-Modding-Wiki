@@ -1,6 +1,4 @@
----
-title: Welcome to the MDC Modding Wiki!
----
+# Welcome to the MDC Modding Wiki!
 
 This is an open-source wiki managed by members of the Mod Dev Cafe (MDC) and was created by modders, for modders. You can join our [Discord server here](https://discord.gg/T5MGNBB)!
 
