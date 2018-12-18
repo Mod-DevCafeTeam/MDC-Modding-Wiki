@@ -1,4 +1,7 @@
 theme: jekyll-theme-minimal #https://github.com/pages-themes/minimal
+title: MDC Modding Wiki
+description: An open source modding tutorial wiki
+logo: logo.png
 defaults:
   -
     scope:
