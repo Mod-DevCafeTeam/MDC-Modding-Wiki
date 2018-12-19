@@ -8,34 +8,27 @@ of creating mods - especially those ones which still use outdated methods! There
 both those who create and consume tutorials in mind, providing a single place where many different tutorials can be
 found, and anyone can contribute to them.
 
-## Viewing
+If you find any issues or would like to suggest any change/improvements to this wiki, then please check existing issues
+or create a new one over at the [issues page](https://github.com/Mod-DevCafeTeam/MDC-Modding-Wiki/issues).
 
-If you are here to find tutorials, then welcome! I hope you find a tutorial suitable to your needs.
+If you'd like to contribute to this wiki, then please head over to the
+[contributing page](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/contributing).
 
-If not, then you can either contribute (see below) or create a suggestion of content in the
-[issues](https://github.com/Mod-DevCafeTeam/MDC-Modding-Wiki/issues).
+Otherwise, please find the contents below!
 
-Otherwise, you can find the
-[contents of this wiki here](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/contents).
+## Contents
 
-## Contributing
+### Getting Started
 
-If you'd like to contribute to this wiki, then you can create pull requests to
-[this repository](https://github.com/Mod-DevCafeTeam/MDC-Modding-Wiki) for changes or additional content. However,
-there's a few rules you must abide by to keep this wiki well structured, clean and consistent:
+[New Project](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/getting_started/new_project)
 
-* Please create tutorials in the most suitable categories. If a category does not exist, then you may create a new one
-and it will be reviewed in your pull request.
-* Always add your new tutorial to the
-[contents page](https://github.com/Mod-DevCafeTeam/MDC-Modding-Wiki/blob/master/pages/contents.md).
-* When creating classes, please use the default code style and make code clean and readable.
+### Items
 
-Please try to also consider the following:
+### Blocks
 
-* Create example classes/resources where necessary. If you include any extra files with your tutorial, then you can
-group everything into a single directory.
-* Tutorials' code examples should be written in Java first. Other language examples (e.g. Kotlin, Scala) can then be
-included.
+### Events
 
-For documentation about using Markdown in tutorials, see
-[GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### World Generation
+
+### Miscellaneous
+
