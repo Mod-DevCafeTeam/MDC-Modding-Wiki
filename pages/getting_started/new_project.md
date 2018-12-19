@@ -91,7 +91,9 @@ JAR. This isn't needed much anymore as Forge will automatically decompile mod de
 
 To make life easier, you don't have to keep searching through the build.gradle for a few values to change any time you
 want to update a version. You can make use of your `gradle.properties` file to collect variables in. You can check out
-and example of that in use here in Sparks Hammers.
+an example of that in use here in Sparks Hammers:
+* [build.gradle](https://github.com/thebrightspark/SparksHammers/blob/1.12/build.gradle)
+* [gradle.properties](https://github.com/thebrightspark/SparksHammers/blob/1.12/gradle.properties)
 
 ### Setting up your workspace
 
