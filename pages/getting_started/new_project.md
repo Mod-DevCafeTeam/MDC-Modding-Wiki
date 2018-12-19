@@ -114,4 +114,4 @@ To summarise, you can run either of these commands to setup your workspace depen
 
 Once you're ready to build your mod, you can simply run `gradlew build`.
 
-This will generate your mod JAR in the `/build/libs` directory/
+This will generate your mod JAR in the `/build/libs` directory.
