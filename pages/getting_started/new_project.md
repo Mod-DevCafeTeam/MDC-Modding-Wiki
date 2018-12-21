@@ -71,7 +71,9 @@ minecraft {
 ```
 This part defines a few fields used when building your development environment (which we'll get to soon). The first one
 you can see there is the `version`. This is the Forge version we're using. If you ever want to update the version of
-Forge within your mod, simply update this value.
+Forge within your mod, simply update this value. It's worth mentioning that rarely the ForgeGradle version will change
+between major versions of Forge! When updating to a new MC version, make sure to download the Forge MDK again to double
+check your `build.gradle` is up to date.
 
 The next is the `runDir`, which is just the directory where Minecraft will be running from when you click "Run" in your
 IDE.
