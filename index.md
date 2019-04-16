@@ -14,21 +14,7 @@ or create a new one over at the [issues page](https://github.com/Mod-DevCafeTeam
 If you'd like to contribute to this wiki, then please head over to the
 [contributing page](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/contributing).
 
-Otherwise, please find the contents below!
+Otherwise, please follow the below links to the MC version you're interested in for their respective contents page:
 
-## Contents
-
-### Getting Started
-
-[New Project](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/getting_started/new_project)
-
-### Items
-
-### Blocks
-
-### Events
-
-### World Generation
-
-### Miscellaneous
-
+- [1.12](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/1_12/index_1_12)
+- [1.13](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/1_13/index_1_13)
