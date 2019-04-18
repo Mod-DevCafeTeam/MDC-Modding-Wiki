@@ -115,6 +115,6 @@ Now the event parameter for key input uses `event.getKey()` instead of `event.ge
     }
 ```
 
-And that's basically all there's to it! You can make it as fancy as you want with multiple listeners, for example, `onKeyDown(), onKeyUP(), onKey()`. You can also use a switch case to check for more keys for example, but that's all up to you.  
+And that's basically all there's to it! You can make it as fancy as you want with multiple listeners, for example, `onKeyDown(), onKeyUP(), onKey()`. You can also use a switch case to check for more keys or even create a custom keybinding system.
 
-You now know the basics and can get creative with it!
+You now know the basics and it's up to you to get creative with it!
