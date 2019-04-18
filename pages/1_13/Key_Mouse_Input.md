@@ -27,7 +27,7 @@ For our mouse input we need to import the following three classes:
 `import net.minecraftforge.eventbus.api.SubscribeEvent`  
 `import static org.lwjgl.glfw.GLFW.*`
 
-We're going to make a public static method with a return type of void. Just as our class itself, we have to give this method an annotation: `@SubscribeEvent`. This tells forge that this method wants to subscribe to a certain event.   
+We're going to make a public static method with a return type of void. We have to give this method the annotation: `@SubscribeEvent`. This tells forge that this method wants to subscribe to a certain event.   
 
 In order to let forge know which event we want to subscribe to, we have to give the method a parameter. For mouse input we use the following parameter: `InputEvent.MouseInputEvent event`. Your class should now look a little something like this:
 
@@ -50,9 +50,9 @@ public class InputEventHandler {
 }
 ```
 
-Now this already works! if you put a System.out.println in this method it will print out the message in the console on every mouse click. Ofcourse we want to be able to differentiate between different mouse buttons and whether the mouse was pressed or released. That's what we're going to look at now.
+Now this already works! if you put a System.out.println in this method it will print out the message in the console on every mouse click. Ofcourse we want to be able to differentiate between different mouse buttons and whether the mouse button was pressed or released. That's what we're going to look at now.
 
-Since the forge update, the event parameter that we passed into our method now contains a bunch of extra features. The two most important ones are `event.getButton()` and `event.getAction()`.  
+Since the forge update, the event parameter that we passed into our method now contains a bunch of extra features. The two most important ones are `event.getButton()` and `event.getAction()`. With the former you can check for specific mouse buttons like the left, right or middle mouse button. With the latter you can check if the mouse button was pressed or released, basically OnMouseButtonDown and OnMouseButtonUp.
 
 GLFW has a lot of enums set up for you to use in conjunction with the above two methods. The most important ones for mouse input are:
 
@@ -70,7 +70,7 @@ In the following code snippet I'll show you how you can use them with the event 
         }
     }
 ```
-It's as simple as that! Whith that if statement we check which mouse button was pressed.  
+It's as simple as that! Whith that if statement we check which mouse button was pressed before we execute our desired code.  
 Now if we also want to check whether the mouse button was pressed or released we can add an extra check in the if statement using `event.getAction()`. This function also returns an int and you guessed it, GLFW also has a couple of enums for this:
 
 `GLFW_PRESS`  
@@ -86,7 +86,9 @@ We can just use them in the same if statement like this:
         }
     }
 ```
-That's it for mouse input. Let's continue to key input, which is very similar.
+This method checks if the **left** mouse button was **pressed**.
+
+That's it for mouse input! Let's continue to key input, which is very similar.
 
 ### Key Input
 
