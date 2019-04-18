@@ -71,6 +71,7 @@ In the following code snippet I'll show you how you can use them with the event 
     }
 ```
 It's as simple as that! Whith that if statement we check which mouse button was pressed before we execute our desired code.  
+
 Now if we also want to check whether the mouse button was pressed or released we can add an extra check in the if statement using `event.getAction()`. This function also returns an int and you guessed it, GLFW also has a couple of enums for this:
 
 `GLFW_PRESS`  
