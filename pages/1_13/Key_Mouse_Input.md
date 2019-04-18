@@ -52,4 +52,64 @@ public class InputEventHandler {
 
 Now this already works! if you put a System.out.println in this method it will print out the message in the console on every mouse click. Ofcourse we want to be able to differentiate between different mouse buttons and whether the mouse was pressed or released. That's what we're going to look at now.
 
-Since the forge update, the event parameter that we passed into our method now contains a bunch of extra features. The two most important ones are `event.getButton()` and `event.getAction()`.
+Since the forge update, the event parameter that we passed into our method now contains a bunch of extra features. The two most important ones are `event.getButton()` and `event.getAction()`.  
+
+GLFW has a lot of enums set up for you to use in conjunction with the above two methods. The most important ones for mouse input are:
+
+`GLFW_MOUSE_BUTTON_LEFT`  
+`GLFW_MOUSE_BUTTON_RIGHT`  
+`GLFW_MOUSE_BUTTON_MIDDLE`
+
+In the following code snippet I'll show you how you can use them with the event parameter to check which key was pressed:
+
+```java
+    @SubscribeEvent
+    public static void onMouseClick(InputEvent.MouseInputEvent event){
+        if (event.getButton() == GLFW_MOUSE_BUTTON_LEFT){
+            //Do your stuff here
+        }
+    }
+```
+It's as simple as that! Whith that if statement we check which mouse button was pressed.  
+Now if we also want to check whether the mouse button was pressed or released we can add an extra check in the if statement using `event.getAction()`. This function also returns an int and you guessed it, GLFW also has a couple of enums for this:
+
+`GLFW_PRESS`  
+`GLFW_RELEASE`  
+
+We can just use them in the same if statement like this:
+
+```java
+    @SubscribeEvent
+    public static void onMouseClick(InputEvent.MouseInputEvent event){
+        if (event.getButton() == GLFW_MOUSE_BUTTON_LEFT && event.getAction() == GLFW_PRESS){
+            //Do your stuff here
+        }
+    }
+```
+That's it for mouse input. Let's continue to key input, which is very similar.
+
+### Key Input
+
+We already have all the imports we need from the previous section.  
+
+For our key input we're going to make another public static method with return type void and annotate it with `@SubscribeEvent`. Instead of passing in `InputEvent.MouseInputEvent event`, we're now going to pass in `InputEvent.KeyInputEvent event` as our method parameter. Your method should look like this:
+
+```java
+    @SubscribeEvent
+    public static void onKeyPress(InputEvent.KeyInputEvent event){
+
+    }
+```
+
+Now the event parameter for key input uses `event.getKey()` instead of `event.getButton()`. The only thing that changes is the key enums. They are constructed like this: `GLFW_KEY_R`. For all the keys that are available you should take a look inside the GLFW class, they're all there. Below you will find an example of a method that checks if the **R** key was **released**:
+
+```java
+    @SubscribeEvent
+    public static void onKeyRelease(InputEvent.KeyInputEvent event){
+        if (event.getKey() == GLFW_KEY_R && event.getAction() == GLFW_RELEASE){
+            //Do your stuff here
+        }
+    }
+```
+
+And that's basically all there's to it! I hope this will get you on your way of registering input like a boss!
