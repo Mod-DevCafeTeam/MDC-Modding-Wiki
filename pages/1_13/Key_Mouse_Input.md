@@ -52,7 +52,7 @@ public class InputEventHandler {
 
 Now this already works! if you put a `System.out.println` in this method it will print out the message in the console on every mouse click. Of course we want to be able to differentiate between different mouse buttons and whether the mouse button was pressed or released. That's what we're going to look at now.
 
-Since the forge update, the event parameter that we passed into our method now contains a bunch of extra features. The two most important ones are `event.getButton()` and `event.getAction()`. With the former you can check for specific mouse buttons like the left, right or middle mouse button. With the latter you can check if the mouse button was pressed or released, basically OnMouseButtonDown and OnMouseButtonUp.
+The event parameter that we passed into our method contains a bunch of features. The two most important ones are `event.getButton()` and `event.getAction()`. With the former you can check for specific mouse buttons like the left, right or middle mouse button. With the latter you can check if the mouse button was pressed or released, basically OnMouseButtonDown and OnMouseButtonUp.
 
 GLFW has a lot of enums set up for you to use in conjunction with the above two methods. The most important ones for mouse input are:
 
