@@ -2,7 +2,7 @@
 
 Forge uses a library called GLFW for its input events. For more in-depth information on the GLFW library, please visit their documentation website: https://www.glfw.org/documentation.html  
 
-With update .146 that forge released two days ago, it is super easy to register key and mouse input within your mod. To keep your files nice and organized I highly suggest that you make a seperate class for registering input. Name it something like InputEventHandler.
+With forge 1.13 it is super easy to register key and mouse input within your mod. To keep your files nice and organized I highly suggest that you make a seperate class for registering input. Name it something like InputEventHandler.
 
 ### Class Setup
 
@@ -50,7 +50,7 @@ public class InputEventHandler {
 }
 ```
 
-Now this already works! if you put a System.out.println in this method it will print out the message in the console on every mouse click. Ofcourse we want to be able to differentiate between different mouse buttons and whether the mouse button was pressed or released. That's what we're going to look at now.
+Now this already works! if you put a `System.out.println` in this method it will print out the message in the console on every mouse click. Of course we want to be able to differentiate between different mouse buttons and whether the mouse button was pressed or released. That's what we're going to look at now.
 
 Since the forge update, the event parameter that we passed into our method now contains a bunch of extra features. The two most important ones are `event.getButton()` and `event.getAction()`. With the former you can check for specific mouse buttons like the left, right or middle mouse button. With the latter you can check if the mouse button was pressed or released, basically OnMouseButtonDown and OnMouseButtonUp.
 
