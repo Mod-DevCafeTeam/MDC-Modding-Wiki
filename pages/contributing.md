@@ -6,6 +6,7 @@ there's a few rules you must abide by to keep this wiki well structured, clean a
 
 * Please create tutorials in the most suitable categories. If a category does not exist, then you may create a new one
 and it will be reviewed in your pull request.
+* Tutorial page file names should always be in lowercase for consistency (e.g. `new_project.md`)
 * Always add your new tutorial to the
 [contents page](https://github.com/Mod-DevCafeTeam/MDC-Modding-Wiki/blob/master/pages/contents.md).
 * When creating classes, please use the default code style and make code clean and readable.
