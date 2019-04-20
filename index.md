@@ -12,7 +12,7 @@ If you find any issues or would like to suggest any change/improvements to this 
 or create a new one over at the [issues page](https://github.com/Mod-DevCafeTeam/MDC-Modding-Wiki/issues).
 
 If you'd like to contribute to this wiki, then please head over to the
-[contributing page](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/contributing).
+[contributing page](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/CONTRIBUTING).
 
 Otherwise, please follow the below links to the MC version you're interested in for their respective contents page:
 
