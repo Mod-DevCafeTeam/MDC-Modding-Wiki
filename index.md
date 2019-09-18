@@ -18,3 +18,4 @@ Otherwise, please follow the below links to the MC version you're interested in 
 
 - [1.12](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/1_12/index_1_12)
 - [1.13](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/1_13/index_1_13)
+- [1.14](https://mod-devcafeteam.github.io/MDC-Modding-Wiki/pages/1_14/index_1_14)
