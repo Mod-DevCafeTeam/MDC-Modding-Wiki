@@ -69,9 +69,43 @@ can be set using the methods of the `Properties` object
 the `setRegistryName` method specifes the internal name (id) your items
 will use.
 
-## Testing in-game
+### Testing in-game
 
-If you launch your game now (using the `runClient` task in your IDE), you should be able to give yourself
-your items using the `/give` command (`/give @p modid:registry_name`).
-When you do that you will surely notice that something's missing
-and that something is a texture / model.
+If you launch your game now (using the `runClient` task in your IDE), 
+you should be able to give yourself your items using 
+the `/give` command (`/give @p modid:registry_name`).
+When you do that you will surely notice that your item is a purple
+blocky mess. To fix this you have to add a model and a texture.
+
+## Basic Item Model
+The most basic item model you can have is this:
+
+```json
+{
+    "parent":"item/generated",
+    "textures": {
+        "layer0":"modid:item/item_texture_name_without_extension"
+    }
+}
+```
+
+All this does is "extend" the default item generated model
+using the `parent` option and specify a texture.
+
+You will want to place a JSON file named the same way
+as your item (e.g. if your registry name is `gem` then your file will be `gem.json`)
+in the `src/main/resources/assets/modid/models/item/` directory.
+Then you will want to place a texture file in any directory, with any name
+under the `src/main/resources/assets/modid/textures` directory.
+You just have to make sure the path in your model file matches.
+(e.g. if you place your file in `textures/whatever/xd.png`, then your model
+must point to `modid:whatever/xd`, but in theese tutorials i will use the
+typical convention of placing item textures under `textures/item`).
+Now you can go back to the game and press `F3 + T` to reload assets
+without having to close it.
+
+#### !! NOTE !!
+In Intellij idea you might need to use the `Run -> Reload Change Classes` option before `F3 + T` succesfuly works, which may only be possible in Debug Mode
+
+## Advanced models
+TODO
