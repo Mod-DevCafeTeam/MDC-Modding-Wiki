@@ -3,6 +3,11 @@
 In this article I will be explaining the basic structure
 of your mod's code.
 
+## Directory structure
+As you may or may not know all your code should reside in the `src/main/java/` directory
+and under that directory you should have a structure matching the `group` from 
+your `build.gradle` [as explained in the first tutorial](./new_project.md#editing-the-buildgradle)
+
 
 ## Main Class
 
