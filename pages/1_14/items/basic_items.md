@@ -60,7 +60,7 @@ Not in every case, but pretty often you will want
 a custom class for your item. In this case
 i just used the vanilla `Item` class
 
-The `Properties` obejct contains some information about
+The `Properties` object contains some information about
 the item like which `ItemGroup` (Crative Tab) it belongs to or
 how many of them can be in a stack. Those values
 can be set using the methods of the `Properties` object
