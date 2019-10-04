@@ -3,21 +3,6 @@
 In this article I will be explaining the basic structure
 of your mod's code.
 
-## Reference
-
-Let's start with the simplest, shortest but still important class.
-This classes sole point is to store static, hardcoded values.
-Most of the time all you will be storing here is your `MODID`
-
-Alternatively you can store the modid in your main class.
-
-```java
-class Reference {
-
-    public static final String MODID = "examplemod";
-
-}
-```
 
 ## Main Class
 
@@ -26,10 +11,24 @@ While it often doesn't contain much code it is the main
 entry point of your mod.
 
 ```java
-@Mod(Reference.MODID)
+package com.example.examplemod;
+
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import static com.example.examplemod.ExampleMod.MODID;
+
+@Mod(MODID)
 public class ExampleMod {
 
     public static final Logger LOGGER = LogManager.getLogger();
+
+    public static final String MODID = "examplemod";
 
     public ExampleMod() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -51,11 +50,7 @@ As you can see for the basic set up you don't need much.
 
 ### @Mod
 Let's start with the `@Mod` annotation. All you need
-in here is your modid. As you can see we reference our `Reference`
-class here. You can store the modid in this class, all
-you need to add is the same field as in the `Reference` class
-to store it and statically import your `MODID` variable
-(your IDE should suggest that to you after changing `Reference.MODID` to `MODID)
+in here is your modid.
 
 It lets forge know that this class is the entry point of your mod.
 
