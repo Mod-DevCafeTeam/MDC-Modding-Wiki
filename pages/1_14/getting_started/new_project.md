@@ -44,7 +44,8 @@ archivesBaseName = "modid"
 These fields are used when you build your mod. The `version` is your mod's version number, so be sure to change this
 every time you want to release a new version of your mod.
 
-The `group` is your base package name. Typically you would use the domain name of some sort that you own, reversed
+The `group` is your base package name. Typically you would use the domain name of some sort that you own, reversed.
+If you have your own domain you would use something like `com.example.[your mod's name/modid]`
 If you host your mod's source code on GitHub you can use `io.github.[your name].[name of your mod/mod's repository]`.
 If you don't have either of those you can use `[your name].[your mod's name]`.
 
