@@ -105,7 +105,9 @@ Now you can go back to the game and press `F3 + T` to reload assets
 without having to close it.
 
 #### !! NOTE !!
-In Intellij idea you might need to use the `Run -> Reload Change Classes` option before `F3 + T` succesfuly works, which may only be possible in Debug Mode
+In Intellij idea you might need to use the `Run -> Reload Changed Classes` option before `F3 + T` 
+succesfully reloads your resources (If you are not running in Debug Mode this will be grayed out). Alternatively 
+you can press `CTRL + F9`.
 
 ## Advanced models
 TODO
