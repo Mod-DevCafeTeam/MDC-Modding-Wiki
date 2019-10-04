@@ -9,6 +9,8 @@ Let's start with the simplest, shortest but still important class.
 This classes sole point is to store static, hardcoded values.
 Most of the time all you will be storing here is your `MODID`
 
+Alternatively you can store the modid in your main class.
+
 ```java
 class Reference {
 
@@ -50,8 +52,10 @@ As you can see for the basic set up you don't need much.
 ### @Mod
 Let's start with the `@Mod` annotation. All you need
 in here is your modid. As you can see we reference our `Reference`
-class here. The modid can't be stored in the main class because
-then you wouldn't be able to use it in this annotation.
+class here. You can store the modid in this class, all
+you need to add is the same field as in the `Reference` class
+to store it and statically import your `MODID` variable
+(your IDE should suggest that to you after changing `Reference.MODID` to `MODID)
 
 It lets forge know that this class is the entry point of your mod.
 
