@@ -44,12 +44,13 @@ archivesBaseName = "modid"
 These fields are used when you build your mod. The `version` is your mod's version number, so be sure to change this
 every time you want to release a new version of your mod.
 
-The `group` is your base package name. Normally this will be basically the package structure of your mod between the
-"java" package and your main location where your classes are located. Taking the example mod as an example here, the
-structure is `/src/main/java/com/example/examplemod`. In this case, I'd use `com.example.examplemod` as the `group`.
-However when you rename the example mod, you'd use a name for the author (probably your own alias or team name) and the
-mod ID. For example, for the mod [Sparks Hammers](https://github.com/thebrightspark/SparksHammers) you will find the
-structure is `/src/main/java/brightspark/sparkshammers` so the `group` is set to `brightspark.sparkshammers`.
+The `group` is your base package name. Typically you would use the domain name of some sort that you own, reversed
+If you host your mod's source code on GitHub you can use `io.github.[your name].[name of your mod/mod's repository]`.
+If you don't have either of those you can use `[your name].[your mod's name]`.
+
+Later when you will be renaming the example mod make sure the directory structure is the same.
+E.g. if your group is `io.github.author.coolmod` your directory structure will be
+`src/main/java/io/github/author/coolmod` and it will be the place where you will put all your mod's code
 
 The `archivesBaseName` will be used for the built JAR file name (along with the version), and ideally would be your mod
 ID.
