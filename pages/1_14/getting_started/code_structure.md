@@ -56,7 +56,7 @@ then you wouldn't be able to use it in this annotation.
 It lets forge know that this class is the entry point of your mod.
 
 ### LOGGER
-The logger is used to log information useful for debbuging, resolving conflicts with other mods and notifying yourself if a user
+The logger is used to log information useful for debugging, resolving conflicts with other mods or just additional info for when a user
 reports an issue.
 
 ### Constructor
