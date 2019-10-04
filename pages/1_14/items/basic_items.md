@@ -21,10 +21,10 @@ import net.minecraftforge.registries.ObjectHolder;
 public class ModItems {
 
     @ObjectHolder("gem")
-    public static Item GEM = null;
+    public static final Item GEM = null;
 
     @ObjectHolder("example")
-    public static Item EXAMPLE = null;
+    public static final Item EXAMPLE = null;
 
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> e) {
