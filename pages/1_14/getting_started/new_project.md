@@ -141,6 +141,9 @@ an example of that in use here in Sparks Hammers:
 * [build.gradle](https://github.com/thebrightspark/SparksHammers/blob/1.12/build.gradle)
 * [gradle.properties](https://github.com/thebrightspark/SparksHammers/blob/1.12/gradle.properties)
 
+!! NOTE !!
+Although the above examples are from a 1.12 mod, Gradle still works the same in this case.
+
 ### Setting up your workspace
 
 Once you have everything extracted out of the MDK and configured for your project, you can now build your workspace.
