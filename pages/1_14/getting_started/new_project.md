@@ -12,7 +12,7 @@ First of all, you'll need to get yourself a Forge MDK from the official Forge si
 http://files.minecraftforge.net/
 
 Ideally, you'll want to get the latest stable version for the Minecraft version you want to create a mod in. These
-tutorials will all be using Minecraft 1.12.2 and the recommended version at time of writing is 1.12.2 - 14.23.5.2768.
+tutorials will all be using Minecraft 1.14.4 and the recommended version at time of writing is 1.14.4 - 28.1.0.
 
 Now is the easiest time to prepare any source control for your project. If you would like to, create your repository
 and clone it to wherever you'd like your project to live locally. If you don't want to use source control, then just
