@@ -2,6 +2,13 @@
 
 At this point you should be able start with creating some basic items.
 
+!! NOTE !!
+
+This is presuming you followed these previous tutorials (in this order):
+- [New Project](../getting_started/new_project.md)
+- [Code Structure](../getting_started/code_structure.md)
+- [Resource Structure](../getting_started/resource_structure.md)
+
 Let's start with a `ModItems` class.
 
 ```java
