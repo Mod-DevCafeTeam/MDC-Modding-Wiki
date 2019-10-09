@@ -150,8 +150,10 @@ Once you have everything extracted out of the MDK and configured for your projec
 All you have to do is import the project into your IDE of choice
 and generate the launch tasks for your IDE.
 
-* In Intellij Idea you can do this using the `File -> Open...` menu option and selecting your project directory. To generate to tasks you
-have to run `gradlew genIntellijRuns`
+* In Intellij Idea you can do this using the `File -> Open...` menu option and selecting your `build.gradle`.
+To generate the tasks you have to run `gradlew genIntellijRuns`.
+
+(In Intellij you can do this using the `Gradle` tab)
 
 !! NOTE !!
 
@@ -162,6 +164,6 @@ launch configurations
 
 ### Building your mod
 
-Once you're ready to build your mod, you can simply run `gradlew build`.
+Once you're ready to build your mod, you can simply run `gradlew build`. (Same as before you can use Intellij's gradle integration to run the `build` task)
 
 This will generate your mod JAR in the `/build/libs` directory.
