@@ -107,6 +107,7 @@ provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
 For more info:
 https://docs.gradle.org/current/userguide/dependency_management_for_java_projects.html
+(shows some new fancy things like `implementation` and `api`)
 
 ### Jar manifest
 This last section of the build.gradle allows you to add
