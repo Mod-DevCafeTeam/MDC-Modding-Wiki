@@ -134,8 +134,8 @@ In here you specify things related to your own mod
 
 ### Dependencies
 In here you can specify mods your mod depends on.
-E.g. if you wanted to add a new Babule
-you would have to depend on Baubles.
+E.g. if you wanted to add a new Bauble
+you would have to depend on [Baubles](https://www.curseforge.com/minecraft/mc-mods/baubles).
 
 ```toml
 [[dependencies.examplemod]] #optional
