@@ -2,9 +2,9 @@
 
 ### Getting Started
 
-- [New Project](./getting_started/new_project)
-- [Basic Code Structure](./getting_started/code_structure)
-- [Basic Resource Structure](./getting_started/resource_structure)
+- [New Project](./getting_started/new_project.md)
+- [Basic Code Structure](./getting_started/code_structure.md)
+- [Basic Resource Structure](./getting_started/resource_structure.md)
 
 ### Items
 
