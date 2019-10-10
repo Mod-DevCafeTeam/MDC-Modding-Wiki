@@ -9,9 +9,9 @@ With forge 1.13 it is super easy to register key and mouse input within your mod
 Now that we've created our input class we have to annotate it with `@Mod.EventBusSubscriber`. This tells forge that this class wants to subscribe to the MinecraftForge EVENT_BUS when it's constructed. In order to use said annotation we have to import the following interface: `net.minecraftforge.fml.common.Mod`. Your class should now look a little something like this.
 
 ```java
-package exampleinput
+package exampleinput;
 
-import net.minecraftforge.fml.common.Mod
+import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
 public class InputEventHandler {
